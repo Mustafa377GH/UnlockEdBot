@@ -105,7 +105,7 @@
 
   <div class="welcome">
     <img src="Untitled design.png" alt="UnlockEd Logo" />
-    <p>Chat with your AI assistant</p>
+    <p>Chat with the UnlockEd Bot</p>
     <button class="start-btn" id="startChat">Start Chat</button>
   </div>
   <div id="n8n-chat"></div>
@@ -113,7 +113,7 @@
   <script type="module">
 
     // CONFIGURATION
-    let agent_name = "UnlockEd Bot";
+    let agent_name = "Eddy";
     let webhookUrl = "https://mustafa.cedarn8n.cloud/webhook/52c364ad-eb8d-4b81-bc06-f954b1fcd475/chat";
 
 
@@ -124,11 +124,11 @@
       target: "#n8n-chat",
       initialMessages: [
 		'Hi there! 👋',
-		'My name is '+agent_name+'. How can I assist you today?'
+		"My name is '+agent_name+'. What's up?"
 	  ],
       webhookUrl,
-      title: 'UnlockEd Assistant',
-      subtitle: "I'm here to help!",
+      title: 'UnlockEd Bot',
+      subtitle: "I'm here to help.",
     });
 
     document.getElementById('startChat').addEventListener('click', () => {
